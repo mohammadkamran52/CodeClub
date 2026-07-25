@@ -10,6 +10,8 @@
   --color-brand-border: #1E3448;
   --color-brand-accent: #10B981;
   --color-brand-muted: #8CA3B8;
+
+  --color-brand-stats-bg: rgba(255, 255, 255, 0.08);
 }
 
 html, body {
@@ -30,6 +32,7 @@ html, body {
     animation: float 22s linear infinite;
     border: 1px solid rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(2px);
+    z-index: -1 !important;
 }
 
 @keyframes float {

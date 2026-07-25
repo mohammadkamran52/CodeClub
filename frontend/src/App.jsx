@@ -1,6 +1,7 @@
 import FloatingSquares from "./components/FloatingSquares";
 import Navbar from "./components/Navbar";
 import Gradients from "./components/Gradients";
+import StatsStrip from "./components/StatsStrip.jsx";
 
 import Home from "./pages/Home";
 import Events from "./pages/Events";
@@ -11,6 +12,7 @@ import Learning from "./pages/Learning";
 
 import {events} from "./data/mockEvents.js";
 import { getNextEvent } from "./utils/getNextEvent.js";
+import { stats } from "./data/stats.js";
 
 import { Route, Routes } from "react-router-dom";
 
@@ -24,7 +26,7 @@ export default function App() {
 
       <div className="flex-grow flex flex-col items-center w-full mt-8">
         <Routes>
-          <Route path="/" element={<Home nextEvent={nextEvent} />} />
+          <Route path="/" element={<Home nextEvent={nextEvent} stats={stats} />} />
           <Route path="/events" element={<Events />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/team" element={<Team />} />
