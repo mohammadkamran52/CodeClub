@@ -2,11 +2,12 @@ import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 left-0 right-0 w-full z-50 px-6 py-4 flex items-center justify-between backdrop-blur-md bg-brand-surface/80 border-b border-brand-border">
+    <nav className="fixed top-0 left-0 right-0 w-full z-50 px-6 py-2 flex items-center justify-between backdrop-blur-md bg-brand-surface/80 border-b border-brand-border">
       {/* Brand Logo */}
       <div className="flex items-center gap-2">
         <Link to="/">
-          <span className="text-xl font-bold text-brand-text tracking-wide">
+          <img src="/public/Logo.svg" alt="CodeClub Logo" className="h-10 w-10 inline mx-1 top-1 relative" />
+          <span className="text-xl font-bold text-brand-text tracking-wide top-1 relative">
             Code<span className="text-brand-accent">Club</span>
           </span>
         </Link>
