@@ -6,9 +6,10 @@ export default function Navbar() {
       {/* Brand Logo */}
       <div className="flex items-center gap-2">
         <Link to="/">
-          <img src="/public/Logo.svg" alt="CodeClub Logo" className="h-10 w-10 inline mx-1 top-1 relative" />
-          <span className="text-xl font-bold text-brand-text tracking-wide top-1 relative">
+          <img src="/logo.svg" alt="CodeClub Logo" className="h-10 w-10 inline mx-1 top-1 relative" />
+          <span className="text-xl font-bold text-brand-text tracking-wide">
             Code<span className="text-brand-accent">Club</span>
+            <span className="text-brand-muted text-sm font-medium">IU Lucknow</span>
           </span>
         </Link>
       </div>

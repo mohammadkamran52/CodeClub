@@ -14,6 +14,28 @@
   --color-brand-stats-bg: rgba(255, 255, 255, 0.08);
 }
 
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-brand-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-border);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-accent);
+}
+
+/* Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-brand-border) var(--color-brand-bg);
+  scroll-behavior: smooth;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -22,6 +44,12 @@ html, body {
   overflow-x: hidden;
   background-color: var(--brand-bg);
   color: var(--brand-text);
+}
+
+::selection {
+  background-color: var(--color-brand-surface/80);
+  color: var(--color-brand-text);
+  /* filter: invert(1); */
 }
 
 .floating-square {
@@ -64,3 +92,37 @@ html, body {
 body {
   background-color: #0f172a !important;
 } */
+
+@keyframes marquee{
+  from{
+    transform: translateX(0%);
+  }
+  to{
+    transform: translateX(-33.333%);
+  }
+}
+
+.marquee-track{
+  animation: marquee 30s linear infinite
+}
+
+.marquee-track:hover{
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+}
+
+.snap-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.snap-section {
+  height: 100vh;
+  scroll-snap-align: start;
+}

@@ -13,6 +13,8 @@ import Learning from "./pages/Learning";
 import {events} from "./data/mockEvents.js";
 import { getNextEvent } from "./utils/getNextEvent.js";
 import { stats } from "./data/stats.js";
+import { focusAreas } from "./data/focusAreas.js";
+import {galleryItems} from "./data/mockgallery.js";
 
 import { Route, Routes } from "react-router-dom";
 
@@ -26,7 +28,7 @@ export default function App() {
 
       <div className="flex-grow flex flex-col items-center w-full mt-8">
         <Routes>
-          <Route path="/" element={<Home nextEvent={nextEvent} stats={stats} />} />
+          <Route path="/" element={<Home nextEvent={nextEvent} stats={stats} focusAreas={focusAreas} galleryItems={galleryItems} />} />
           <Route path="/events" element={<Events />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/team" element={<Team />} />
