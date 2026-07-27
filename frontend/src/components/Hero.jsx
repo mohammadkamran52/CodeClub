@@ -1,6 +1,7 @@
 import useTypewriter from "../hooks/useTypewriter.jsx";
+// import {getUpcomingEvents} from "../utils/getUpcomingEvents.js";
 
-export default function Hero({ nextEvent }) {
+export default function Hero({nextEvent}) {
 
   const typewriterText = ["Developers.", "Engineers.", "Creators.", "Innovators.", "Problem Solvers.", "Leaders."];
   // const typedText = typewriterText[Math.floor(Math.random() * typewriterText.length)];

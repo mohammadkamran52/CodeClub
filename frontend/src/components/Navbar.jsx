@@ -3,14 +3,16 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 w-full z-50 px-6 py-2 flex items-center justify-between backdrop-blur-md bg-brand-surface/80 border-b border-brand-border">
-      {/* Brand Logo */}
       <div className="flex items-center gap-2">
-        <Link to="/">
-          <img src="/logo.svg" alt="CodeClub Logo" className="h-10 w-10 inline mx-1 top-1 relative" />
-          <span className="text-xl font-bold text-brand-text tracking-wide">
-            Code<span className="text-brand-accent">Club</span>
-            <span className="text-brand-muted text-sm font-medium">IU Lucknow</span>
-          </span>
+        <Link to="/" className="flex items-center gap-2">
+          <img src="/logo.svg" className="h-8" alt="CodeClub logo" />
+
+          <div className="flex flex-col leading-tight">
+            <span className="text-xl font-bold text-brand-text">
+              Code<span className="text-brand-accent">Club</span>
+            </span>
+            <span className="text-xs text-brand-muted">IU Lucknow</span>
+          </div>
         </Link>
       </div>
 

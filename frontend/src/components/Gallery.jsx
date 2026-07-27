@@ -5,6 +5,9 @@ export default function GalleryMarquee({ galleryItems }) {
 
   return (
     <div className="overflow-hidden z-10">
+      <h2 className="text-3xl font-bold text-brand-text mb-8 text-center">
+        Behind the Code
+      </h2>
       <div className="flex gap-4 marquee-track w-max">
         {tripled.map((item, index) => (
           <div
