@@ -1,6 +1,6 @@
 function FocusAreaCard({ title, description, icon: Icon }) {
   return (
-    <div className=" text-brand-text bg-brand-stats-bg backdrop-filter backdrop-blur-sm rounded-lg shadow-md p-6 text-center border border-transparent hover:border-brand-accent/50 transition-colors z-10">
+    <div className=" text-brand-text bg-brand-stats-bg backdrop-filter backdrop-blur-sm rounded-lg shadow-md p-6 text-center border border-transparent hover:border-brand-accent/50 transition-all hover:scale-105 z-10">
       <Icon className="w-15 h-15 text-brand-accent mb-4 mx-auto" />
       <h2 className="text-3xl font-semibold mb-2">{title}</h2>
       <p className="text-brand-muted">{description}</p>

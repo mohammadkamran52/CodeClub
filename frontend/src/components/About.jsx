@@ -6,7 +6,7 @@ export default function About() {
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="bg-brand-stats-bg border border-transparent hover:border-brand-accent/50 transition-colors backdrop-filter backdrop-blur-sm rounded-lg shadow-md p-8 z-10">
+        <div className="bg-brand-stats-bg border border-transparent hover:border-brand-accent/50 transition-all hover:scale-105 backdrop-filter backdrop-blur-sm rounded-lg shadow-md p-8 z-10">
           <h3 className="text-2xl font-bold text-brand-text mb-3">
             Who We Are
           </h3>
@@ -16,7 +16,7 @@ export default function About() {
           </p>
         </div>
 
-        <div className="bg-brand-stats-bg border border-transparent hover:border-brand-accent/50 transition-colors backdrop-filter backdrop-blur-sm rounded-lg shadow-md p-8 z-10">
+        <div className="bg-brand-stats-bg border border-transparent hover:border-brand-accent/50 transition-all hover:scale-105 backdrop-filter backdrop-blur-sm rounded-lg shadow-md p-8 z-10">
           <h3 className="text-2xl font-bold text-brand-text mb-3">
             What We're About
           </h3>

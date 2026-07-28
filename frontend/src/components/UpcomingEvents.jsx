@@ -6,15 +6,15 @@ export default function UpcomingEvents({ upcomingEvents }) {
 
     return (
       <section className="w-full max-w-6xl mx-auto px-6 py-30">
-        <h2 className="text-3xl font-bold text-brand-text mb-8 text-center">
+        <h2 className="text-3xl font-bold text-brand-text mb-8 text-center ">
           Upcoming Events
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 line-clamp-3">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 ">
           {upcomingEvents.map((event, index) => {
             return (
               <div
                 key={index}
-                className="bg-brand-stats-bg backdrop-filter backdrop-blur-sm rounded-lg shadow-md p-6 border border-transparent hover:border-brand-accent/50 transition-colors z-10"
+                className="bg-brand-stats-bg backdrop-filter backdrop-blur-sm rounded-lg shadow-md p-6 border border-transparent hover:border-brand-accent/50 transition-all hover:scale-105 z-10"
               >
                 <p className="text-sm text-brand-accent font-mono mb-2">
                   {new Date(event.event_date).toLocaleDateString("en-US", {
